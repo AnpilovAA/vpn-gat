@@ -1,13 +1,16 @@
 ## VPN Google Anti-Teleport (GAT)
 
 ### 0) Why?
-Because fuck heuristic GeoIP, that's why. THY SHALL OBEY WHAT WHOIS PROPHECIED
+Because fuck heuristic GeoIP, that's why. THOU SHALT OBEY WHAT WHOIS PROPHECIED
 
 ### 1) ADJUST FIRST for country of your VPN service
 - Dicts pre-shipped for Amsterdam, Stockholm and Paris
-- If needed, use any top-grade LLM AI (Grok, Gemini, Claude etc.) to generate the national dict you need, then feel free to contribute it to project github.
+- If needed, use any top-grade LLM AI (Grok, Gemini, Claude etc.) to generate the national dict you need.
+- Copy `opt/vpn-gat/config.template.py` to `opt/vpn-gat/config.py`, then adjust it
 - Enter your WAN IP to be cleaned up into the corresponding variable
-- Measure the target city lat/lon rectangle using any online map and populate the corresponding config vars
+- Choose the dict for the target country, optionally minify it via `minify-dict.sh queries-full-CITYNAME.txt > queries.txt`
+- If target city lat/lon preset not present in pre-shipped config, measure the respective rectangle using any online map and populate the corresponding config vars.
+- Any contributions of new dictionaries and coordinate rect presets are welcome! To commit new rects to upstream, add them into `config.template.py` as well.
 
 ### 2) Run either in cron, or in infinite loop with delay. Recommended intervals:
 - 2-5m for cleaning already misteleported IP
