@@ -55,8 +55,10 @@ PROFILES_DIR = "/home/user/vpngat"
 PROF_PER_SCREEN = 3
 #LAT_MIN, LAT_MAX = 52.29, 52.42        ## Amsterdam NL
 #LON_MIN, LON_MAX = 4.80, 4.99          ## Amsterdam NL
-LAT_MIN, LAT_MAX = 48.78, 48.95        ## Paris FR
-LON_MIN, LON_MAX = 2.21, 2.59          ## Paris FR
+#LAT_MIN, LAT_MAX = 48.78, 48.95        ## Paris FR
+#LON_MIN, LON_MAX = 2.21, 2.59          ## Paris FR
+LAT_MIN, LAT_MAX = 59.30, 59.34         ## Stockholm SE
+LON_MIN, LON_MAX = 18.02, 18.10         ## Stockholm SE
 
 RESOLUTIONS = [
     (1280, 720),   # 16:9 HD
