@@ -4,7 +4,7 @@
 Because fuck heuristic GeoIP, that's why. THY SHALL OBEY WHAT WHOIS PROPHECIED
 
 ### 1) ADJUST FIRST for country of your VPN service
-- Dicts pre-shipped for Amsterdam and Paris
+- Dicts pre-shipped for Amsterdam, Stockholm and Paris
 - If needed, use any top-grade LLM AI (Grok, Gemini, Claude etc.) to generate the national dict you need, then feel free to contribute it to project github.
 - Enter your WAN IP to be cleaned up into the corresponding variable
 - Measure the target city lat/lon rectangle using any online map and populate the corresponding config vars
